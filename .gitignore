@@ -4,4 +4,3 @@ node_modules/
 *.iml
 .jshintrc
 logs/*
-/docs/dist/tailwind-compiled.css
