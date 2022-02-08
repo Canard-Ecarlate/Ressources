@@ -502,6 +502,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.gradient {
+  background: linear-gradient(90deg, #6d040f, #fcc456);
+}
+
 .fixed {
   position: fixed;
 }
