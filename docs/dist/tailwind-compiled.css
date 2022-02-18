@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Source Sans Pro;
   /* 4 */
 }
 
@@ -514,7 +514,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .footer-banner-img {
   /*
         background: linear-gradient(90deg, #6d040f, #fcc456);
-
         The background will be replaced by a banner once it will be available*/
   background-image: url("../images/6.jpg");
   background-size: 100%;
