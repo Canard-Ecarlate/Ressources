@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>
-        DuckCity - Who has the bomb ?
+        DuckCity About Us
     </title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <meta name="author" content=""/>
-    <link rel="stylesheet" href="./dist/tailwind-compiled.css"/>
+    <meta name="author" content="Canard écarlate"/>
+    <link rel="stylesheet" href="../dist/tailwind-compiled.css"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"/>
-
 </head>
-<body class="leading-normal tracking-normal text-white">
-<div class="banner-img">
+<body class="leading-normal tracking-normal">
+<div class="banner-img text-white">
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white transition hover:scale-105 duration-300 ease-in-out">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                   href="#">
+                   href="https://canardecarlate.fr">
                     <!--Icon from: http://www.potlabicons.com/ -->
                     <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 240.005 256.005">
@@ -55,13 +54,14 @@
                            href="#"></a>
                     </li>
                     <li class="mr-3">
-                        <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 selected"
+                        <a class="inline-block text-white underline hover:text-gray-200 hover:text-underline py-2 px-4 selected"
                            href="https://canardecarlate.fr/aboutus">About us</a>
                     </li>
                 </ul>
                 <button
                         id="navAction"
-                        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                >
                     Soon !
                 </button>
             </div>
@@ -69,28 +69,13 @@
         <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
     </nav>
     <!--Hero-->
-    <div class="pt-24 h-200">
+    <div class="pt-24">
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-            <!--Left Col-->
-            <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                <p class="uppercase tracking-loose w-full"></p>
-                <h2 class="my-4 mt- text-5xl font-bold leading-tight">
-                    The city is in danger!
-                </h2>
-                <p class="leading-normal text-2xl mb-8">
-                    Don't let the city explode, help your team defuse the bomb as quick as possible!
-                </p>
-                <a href="https://forms.gle/uQ9rELLRUwg5ERPy7"
-                   class="mb-60 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Soon !
-                </a>
-            </div>
-            <!--Right Col-->
         </div>
     </div>
     <div class="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink">
+        >
             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
                     <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
@@ -111,76 +96,65 @@
         </svg>
     </div>
 </div>
-<section class="bg-white py-8">
-    <div class="container max-w-5xl mx-auto m-8">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Make your QUACK heard!
-        </h2>
-        <div class="w-full mb-4">
-            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="flex flex-wrap">
-            <div class="w-5/6 sm:w-1/2 p-6 lg:my-12">
-                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                    Our ducks need a new voice!
-                </h3>
-                <p class="text-gray-600 mb-8">
-                    Fill out the form and send us your best ducks records !
-                </p>
-                <a class="x-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                   href="https://forms.gle/uQ9rELLRUwg5ERPy7">I want to help!</a>
-            </div>
-            <div class="md:w-1/3 sm:w-1/2 p-6">
-                <img alt="Canard col-vert" src="./images/Canard-micro.png">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="bg-white py-8">
-    <div class="container max-w-5xl mx-auto m-8">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            A bomb has been planted in DuckCity!
-        </h2>
-        <div class="w-full mb-4">
-            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="flex flex-wrap">
-            <div class="w-5/6 sm:w-1/2 p-6 lg:my-12 flex">
-                <div class="self-center">
-                    <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3 mt-au ">
-                        The terrible mafia, the Scarlet Ducks, is attacking us!
-                    </h3>
-                    <p class="text-gray-600 mb-8 content-center">
-                        But all is not lost! The Indigo Anti-Terrorist Ducks (CIAT) will do everything they can to
-                        defuse
-                        this bomb and save the city!
-                        But beware, the Scarlet Ducks won't let them: they have infiltrated the team and will sabotage
-                        the
-                        defusing.
-                    </p>
-                </div>
-            </div>
-            <div class="md:w-1/3 sm:w-1/2 p-6 rotate-6 ml-12">
-                <img alt="Canard col-vert" src="./images/screenshot_parc.png">
-            </div>
-        </div>
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-            <div class="md:w-1/3 sm:w-1/2 p-6 -rotate-6">
-                <img class="-scale-x-100" alt="Canard vert" src="./images/screenshot_bar.png">
-            </div>
-            <div class="w-full sm:w-1/2 p-6 lg:my-12 flex">
-                <div class="self-center">
+<div class="text-justify w-2/3 mx-auto">
+    <section class="bg-white py-8">
+        <div class="container max-w-5xl mx-auto m-8">
+            <div class="flex flex-wrap">
+                <div class="w-5/6 sm:w-1/2 p-6 lg:my-12">
                     <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                        Watch out!
+                        A great community!
                     </h3>
                     <p class="text-gray-600 mb-8">
-                        Behind the pretences and the fine words there may be a Scarlet Duck ready to blow it all up!
+                        A whole community is ready to enjoy the game with you! Enhance your experience by joining our discord server.
                     </p>
+                    <a class="x-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                       href="https://discord.gg/KRntvcP68C">Join the community!</a>
+                </div>
+                <div class="md:w-1/3 sm:w-1/2 p-6">
+                    <img class="fill-white" alt="Logo Discord" src="../images/discord.png">
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section class="bg-white py-8">
+        <div class="container max-w-5xl mx-auto m-8">
+            <div class="flex flex-wrap">
+                <div class="md:w-1/3 sm:w-1/2 p-6">
+                    <img alt="Logo GitHub" src="../images/GitHub.png">
+                </div>
+                <div class="w-5/6 sm:w-1/2 p-6 lg:my-12">
+                    <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                        A fully open-source project!
+                    </h3>
+                    <p class="text-gray-600 mb-8">
+                        The whole community works together to create and improve the game experience. Your help is more
+                        than welcome! You can follow our progression on GitHub!
+                    </p>
+                    <a class="x-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                       href="https://github.com/Canard-Ecarlate/">Visit our Repositories!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white pb-8">
+        <div class="container max-w-5xl mx-auto m-8">
+            <div class="flex flex-wrap">
+                <div class="">
+                    <img alt="Logo GitHub" src="../images/team.png">
+                </div>
+                <div class="lg:my-12">
+                    <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                        A wonderful team!
+                    </h3>
+                    <p class="text-gray-600 mb-8">
+                        We are a team of seven software engineers, our goal is to build a fun game and enjoy it with you!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
 <div class="footer-banner-img">
     <!-- Change the colour #f8fafc to match the previous section colour -->
     <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -207,17 +181,7 @@
             </g>
         </g>
     </svg>
-    <section class="container mx-auto text-center py-6 mb-12">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-            Be ready!
-        </h2>
-        <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <h3 class="my-4 text-3xl pb-24">
-            Our game will be available soon!
-        </h3>
-    </section>
+
 
     <!--Footer-->
     <footer class="text-white">
@@ -285,7 +249,7 @@
         </div>
     </footer>
 </div>
-<script src="scripts/scroll.js"></script>
-<script src="scripts/menu.js"></script>
+<script src="../scripts/scroll.js"></script>
+<script src="../scripts/menu.js"></script>
 </body>
 </html>
