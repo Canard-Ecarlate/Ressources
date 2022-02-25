@@ -507,22 +507,22 @@ Ensure the default browser behavior of the `hidden` attribute.
         background: linear-gradient(90deg, #6d040f, #fcc456);
 
         The background will be replaced by a banner once it will be available*/
-  background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,0)),url("../images/4.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)),url("../images/4.jpg");
   background-size: 100%;
-  background-position-y: 20%;
+  background-position-y: 70%;
 }
 
 .footer-banner-img {
   /*
         background: linear-gradient(90deg, #6d040f, #fcc456);
         The background will be replaced by a banner once it will be available*/
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)),url("../images/6.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.9)),url("../images/6new.jpg");
   background-size: 100%;
   background-position-y: 40%;
 }
 
 .gradient {
-  background: linear-gradient(90deg, #006c95, #2095b8);
+  background: linear-gradient(90deg, #00394f, #0f4b5c);
 }
 
 .fixed {
@@ -614,6 +614,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -698,6 +702,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-grow: 1;
 }
 
+.rotate-6 {
+  --tw-rotate: 6deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-6 {
+  --tw-rotate: -6deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-scale-x-100 {
   --tw-scale-x: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -723,6 +737,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -741,6 +759,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded-full {
@@ -855,10 +877,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: justify;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -926,6 +944,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
