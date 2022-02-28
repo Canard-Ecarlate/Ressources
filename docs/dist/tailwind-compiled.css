@@ -507,7 +507,7 @@ Ensure the default browser behavior of the `hidden` attribute.
         background: linear-gradient(90deg, #6d040f, #fcc456);
 
         The background will be replaced by a banner once it will be available*/
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)),url("../images/4.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)),url("../images/4.jpg");
   background-size: 100%;
   background-position-y: 70%;
 }
