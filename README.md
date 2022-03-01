@@ -11,7 +11,7 @@ C'est un jeu mobile bientôt disponible sur Android et IOS. C'est un jeu à rôl
 <br><br>
 <center><img src="https://canardecarlate.fr/images/Canard-blanc.png" style="border-radius: 50%; width: 300px;"></center>
 
-##BackEnd
+##Ressources
 Ce repositorie est destiné aux ressources et au site web de l'application qui permet de communiquer sur les avancées du projet.
 
 ##Information
