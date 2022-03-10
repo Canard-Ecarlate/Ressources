@@ -5,26 +5,50 @@ i18next.init({
         en: {
             translation: {
                 "title": "hello world",
-                "website-title" : "Duck-city",
-                "menu-title" : "Menu",
-                "language-menu-button" : "Language",
-                "language-menu-button-mobile" : "Language :",
-            }
-        },
-        fr: {
-            translation: {
-                "title": "Bonjour",
-                "website-title" : "Canard Ecarlate",
-                "menu-title" : "Menu",
-                "language-menu-button" : "Langue",
-                "language-menu-button-mobile" : "Langue :",
+                "website-title": "Duck-city",
+                "menu-title": "Menu",
+                "language-button": "Language",
+                "language-menu-button-mobile": "Language:",
+                "french-button": "🇫🇷 Français",
+                "english-button": "🇬🇧 English",
+                "coin-button": "🦆 Coin",
+                "french-mobile-button": "🇫🇷 Français",
+                "english-mobile-button": "🇬🇧 English",
+                "coin-mobile-button": "🦆 Coin",
+                "main-menu-about-link": "About us",
+                "main-title": "The city is in danger!",
+                "main-sub-title": "Don't let the city explode, help your team defuse the bomb as quick as possible!",
+                "main-button": "Soon!",
+                "navAction": "Soon!",
+                "voice-section-main-title": "Make your QUACK heard!",
+                "voice-section-title": "Our ducks need a new voice!",
+                "voice-section-main-text": "Fill out the form and send us your best ducks records!",
+                "voice-section-button": "I want to help!",
+                "screen-section-main-title": "A bomb has been planted in DuckCity!",
+                "parc-section-title": "The terrible mafia, the Scarlet Ducks, is attacking us!",
+                "parc-section-main-text": " But all is not lost! The Indigo Anti-Terrorist Ducks (CIAT) will do everything they can to defuse this bomb and save the city! But beware, the Scarlet Ducks won't let them: they have infiltrated the team and will sabotage the defusing.",
+                "bar-section-title": "Watch out!",
+                "bar-section-main-text": "Behind the pretences and the fine words there may be a Scarlet Duck ready to blow it all up!",
+                "footer-title": "Be ready!",
+                "footer-subtitle": "Our game will be available soon!",
+                "website-title-footer": "DuckCity",
+                "link-footer": "Links",
+                "faq-link-footer": "FAQ",
+                "help-link-footer": "Help",
+                "support-link-footer": "Support",
+                "legal-footer": "Legal",
+                "legal-link-footer": "Terms",
+                "privacy-link-footer": "Privacy",
+                "social-footer": "Social",
+                "github-link-footer": "Github",
+                "discord-link-footer": "Discord",
             }
         }
     }
 });
 
 const toTranslateList = document.getElementsByClassName("translate");
-for (let i=0; i<toTranslateList.length; i++) {
+for (let i = 0; i < toTranslateList.length; i++) {
     toTranslateList[i].innerHTML = i18next.t(toTranslateList[i].id);
 }
 
