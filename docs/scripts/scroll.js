@@ -3,6 +3,10 @@ const header = document.getElementById("header");
 const navcontent = document.getElementById("nav-content");
 const navaction = document.getElementById("navAction");
 const brandname = document.getElementById("brandname");
+const navToggle = document.getElementById("nav-toggle");
+const languageMenu = document.getElementById("language-menu-button");
+const menuAboutLink = document.getElementById("main-menu-about-link");
+
 const toToggle = document.querySelectorAll(".toggleColour");
 
 document.addEventListener("scroll", function () {
@@ -22,9 +26,15 @@ document.addEventListener("scroll", function () {
         }
         header.classList.add("shadow");
         navcontent.classList.remove("bg-gray-100");
+        languageMenu.classList.add("text-black");
+        navToggle.classList.add("text-black");
         navcontent.classList.add("bg-white");
+        menuAboutLink.classList.add("lg:text-black");
     } else {
         header.classList.remove("bg-white");
+        navToggle.classList.remove("text-black");
+        languageMenu.classList.remove("text-black");
+        menuAboutLink.classList.remove("lg:text-black");
         navaction.classList.remove("gradient");
         navaction.classList.add("bg-white");
         navaction.classList.remove("text-white");
