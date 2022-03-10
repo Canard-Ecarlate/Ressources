@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>
+    <title id="title" class="translate">
         DuckCity - Who has the bomb ?
     </title>
     <meta name="description" content=""/>
@@ -32,14 +32,14 @@
 	c36.627-0.906,65.357-19.023,73.47-41.232c4.855-13.34,9.756-35.424-10.389-62.75c-4.68-6.318-2.84-15.444,13.48-24.37
 	c5.094-2.784,12.426-6.852,38.719-9.486C234.865,68.501,239.022,64.16,231.209,61.338z"/>
                     </svg>
-                    DuckCity
+                    <div class="translate inline" id="website-title">DuckCity</div>
                 </a>
             </div>
             <div class="block lg:hidden pr-4">
                 <button id="nav-toggle"
-                        class="flex items-center p-1 text-blue-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                        class="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                     <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
+                        <title id="menu-title" class="translate">Menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                     </svg>
                 </button>
@@ -47,15 +47,49 @@
             <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
                  id="nav-content">
                 <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                    <li class="mr-3">
-                        <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#"></a>
+                    <li class="mr-3 lg:block hidden">
+                        <div class="relative inline-block text-left">
+                            <div>
+                                <button type="button"
+                                        class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 text-sm font-medium text-white"
+                                        id="language-menu-button" aria-expanded="true" aria-haspopup="true">
+                                    Language
+                                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="hidden origin-top-right absolute right-0 mt-2 w-25 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                 role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1"
+                                 id="language-dropdown">
+                                <div class="py-1" role="none">
+                                    <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem"
+                                       tabindex="-1" id="french-button">🇫🇷 Français</a>
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem"
+                                       tabindex="-1" id="english-button">🇬🇧 English</a>
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem"
+                                       tabindex="-1" id="coin-button">🦆 Coin</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mr-3 lg:hidden">
+                        <p class="inline-block text-white no-underline py-2 px-4 text-black translate" id="language-menu-button-mobile">Language: </p>
+                        <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 text-black"
+                           href="#" id="french-mobile-button">🇫🇷 Français</a>
+                        <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 text-black"
+                           href="#" id="english-mobile-button">🇬🇧 English</a>
+                        <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 text-black"
+                           href="#" id="coin-mobile-button">🦆 Coin</a>
                     </li>
                     <li class="mr-3">
-                        <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                           href="#"></a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 selected"
+                        <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 lg:text-white text-black"
                            href="https://canardecarlate.fr/aboutus">About us</a>
                     </li>
                 </ul>
@@ -285,6 +319,8 @@
         </div>
     </footer>
 </div>
+<script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
+<script src="scripts/language.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
 </body>

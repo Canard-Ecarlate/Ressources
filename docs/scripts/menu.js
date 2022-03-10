@@ -1,13 +1,13 @@
 /*Toggle dropdown list*/
 /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
 
-var navMenuDiv = document.getElementById("nav-content");
-var navMenu = document.getElementById("nav-toggle");
+let navMenuDiv = document.getElementById("nav-content");
+let navMenu = document.getElementById("nav-toggle");
 
 document.onclick = check;
 
 function check(e) {
-    var target = (e && e.target) || (event && event.srcElement);
+    let target = (e && e.target) || (event && event.srcElement);
 
     //Nav Menu
     if (!checkParent(target, navMenuDiv)) {
