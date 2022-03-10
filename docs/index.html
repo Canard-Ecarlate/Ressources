@@ -53,7 +53,7 @@
                                 <button type="button"
                                         class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 text-sm font-medium text-white "
                                         id="language-menu-button" aria-expanded="true" aria-haspopup="true">
-                                    Language
+                                    <div id="language-button" class="translate">Language</div>
                                     <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd"
@@ -68,11 +68,11 @@
                                 <div class="py-1" role="none">
                                     <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
 
-                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem"
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm translate" role="menuitem"
                                        tabindex="-1" id="french-button">🇫🇷 Français</a>
-                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem"
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm translate" role="menuitem"
                                        tabindex="-1" id="english-button">🇬🇧 English</a>
-                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem"
+                                    <a href="#" class="text-gray-700 block px-4 py-2 text-sm translate" role="menuitem"
                                        tabindex="-1" id="coin-button">🦆 Coin</a>
 
                                 </div>
@@ -108,14 +108,14 @@
             <!--Left Col-->
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
                 <p class="uppercase tracking-loose w-full"></p>
-                <h2 class="my-4 mt- text-5xl font-bold leading-tight">
+                <h2 id="main-title" class="my-4 mt- text-5xl font-bold leading-tight translate">
                     The city is in danger!
                 </h2>
-                <p class="leading-normal text-2xl mb-8">
+                <p id="main-sub-title" class="leading-normal text-2xl mb-8 translate">
                     Don't let the city explode, help your team defuse the bomb as quick as possible!
                 </p>
-                <a href="https://forms.gle/uQ9rELLRUwg5ERPy7"
-                   class="mb-60 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <a id="main-button" href="https://forms.gle/uQ9rELLRUwg5ERPy7"
+                   class="mb-60 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out translate">
                     Soon !
                 </a>
             </div>
@@ -147,7 +147,7 @@
 </div>
 <section class="bg-white py-8">
     <div class="container max-w-5xl mx-auto m-8">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+        <h2 id="voice-section-main-title" class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 translate">
             Make your QUACK heard!
         </h2>
         <div class="w-full mb-4">
@@ -155,13 +155,13 @@
         </div>
         <div class="flex flex-wrap">
             <div class="w-5/6 sm:w-1/2 p-6 lg:my-12">
-                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                <h3 id="voice-section-title" class="text-3xl text-gray-800 font-bold leading-none mb-3 translate">
                     Our ducks need a new voice!
                 </h3>
-                <p class="text-gray-600 mb-8">
+                <p id="voice-section-main-text" class="text-gray-600 mb-8 translate">
                     Fill out the form and send us your best ducks records !
                 </p>
-                <a class="x-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                <a id="voice-section-button" class="x-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out translate"
                    href="https://forms.gle/uQ9rELLRUwg5ERPy7">I want to help!</a>
             </div>
             <div class="md:w-1/3 sm:w-1/2 p-6">
@@ -172,7 +172,7 @@
 </section>
 <section class="bg-white py-8">
     <div class="container max-w-5xl mx-auto m-8">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+        <h2 id="screen-section-main-title" class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 translate">
             A bomb has been planted in DuckCity!
         </h2>
         <div class="w-full mb-4">
@@ -181,10 +181,10 @@
         <div class="flex flex-wrap">
             <div class="w-5/6 sm:w-1/2 p-6 lg:my-12 flex">
                 <div class="self-center">
-                    <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3 mt-au ">
+                    <h3 id="parc-section-title" class="text-3xl text-gray-800 font-bold leading-none mb-3 mt-au translate">
                         The terrible mafia, the Scarlet Ducks, is attacking us!
                     </h3>
-                    <p class="text-gray-600 mb-8 content-center">
+                    <p id="parc-section-main-text" class="text-gray-600 mb-8 content-center translate">
                         But all is not lost! The Indigo Anti-Terrorist Ducks (CIAT) will do everything they can to
                         defuse
                         this bomb and save the city!
@@ -204,10 +204,10 @@
             </div>
             <div class="w-full sm:w-1/2 p-6 lg:my-12 flex">
                 <div class="self-center">
-                    <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                    <h3 id="bar-section-title" class="text-3xl text-gray-800 font-bold leading-none mb-3 translate">
                         Watch out!
                     </h3>
-                    <p class="text-gray-600 mb-8">
+                    <p id="bar-section-main-text" class="text-gray-600 mb-8 translate">
                         Behind the pretences and the fine words there may be a Scarlet Duck ready to blow it all up!
                     </p>
                 </div>
@@ -242,13 +242,13 @@
         </g>
     </svg>
     <section class="container mx-auto text-center py-6 mb-12">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        <h2 id="footer-title" class="w-full my-2 text-5xl font-bold leading-tight text-center text-white translate">
             Be ready!
         </h2>
         <div class="w-full mb-4">
             <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-        <h3 class="my-4 text-3xl pb-24">
+        <h3 id="footer-subtitle" class="my-4 text-3xl pb-24 translate">
             Our game will be available soon!
         </h3>
     </section>
@@ -269,49 +269,55 @@
 	c36.627-0.906,65.357-19.023,73.47-41.232c4.855-13.34,9.756-35.424-10.389-62.75c-4.68-6.318-2.84-15.444,13.48-24.37
 	c5.094-2.784,12.426-6.852,38.719-9.486C234.865,68.501,239.022,64.16,231.209,61.338z"/>
                         </svg>
-                        DuckCity
+                        <div class="translate inline" id="website-title-footer">DuckCity</div>
                     </a>
                 </div>
                 <div class="flex-1">
-                    <p class="uppercase text-white md:mb-6">Links</p>
+                    <p id="link-footer" class="uppercase text-white md:mb-6 translate">Links</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://discord.gg/zxDmZPH6Nv"
-                               class="no-underline hover:underline text-gray-200 hover:text-blue-500">FAQ</a>
+                               id="faq-link-footer"
+                               class="no-underline hover:underline text-gray-200 hover:text-blue-500 translate">FAQ</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://discord.gg/zxDmZPH6Nv"
-                               class="no-underline hover:underline text-gray-200 hover:text-blue-500">Help</a>
+                               id="help-link-footer"
+                               class="no-underline hover:underline text-gray-200 hover:text-blue-500 translate">Help</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="mailto:contact@canardecarlate.fr"
-                               class="no-underline hover:underline text-gray-200 hover:text-blue-500">Support</a>
+                               id="support-link-footer"
+                               class="no-underline hover:underline text-gray-200 hover:text-blue-500 translate">Support</a>
                         </li>
                     </ul>
                 </div>
                 <div class="flex-1">
-                    <p class="uppercase text-white md:mb-6">Legal</p>
+                    <p id="legal-footer" class="uppercase text-white md:mb-6 translate">Legal</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://canardecarlate.fr/termsofservice/"
-                               class="no-underline hover:underline text-gray-200 hover:text-blue-500">Terms</a>
+                               id="legal-link-footer"
+                               class="no-underline hover:underline text-gray-200 hover:text-blue-500 translate">Terms</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://canardecarlate.fr/privacy/"
-                               class="no-underline hover:underline text-gray-200 hover:text-blue-500">Privacy</a>
+                               class="no-underline hover:underline text-gray-200 hover:text-blue-500 translate">Privacy</a>
                         </li>
                     </ul>
                 </div>
                 <div class="flex-1">
-                    <p class="uppercase text-white md:mb-6">Social</p>
+                    <p id="social-footer" class="uppercase text-white md:mb-6 translate">Social</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://github.com/Canard-Ecarlate/"
-                               class="no-underline hover:underline text-gray-200 hover:text-blue-500">Github</a>
+                               id="github-link-footer"
+                               class="no-underline hover:underline text-gray-200 hover:text-blue-500 translate">Github</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a href="https://discord.gg/zxDmZPH6Nv"
-                               class="no-underline hover:underline text-gray-200 hover:text-blue-500">Discord</a>
+                               id="discord-link-footer"
+                               class="no-underline hover:underline text-gray-200 hover:text-blue-500 translate">Discord</a>
                         </li>
                     </ul>
                 </div>
